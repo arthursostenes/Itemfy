@@ -1,1 +1,37 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciamento de Itens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <div class="container">
+    <h1>📦 Gerenciador de Itens</h1>
+
+    <div class="formulario">
+      <input type="text" id="nomeItem" placeholder="Nome do item">
+      <input type="number" id="quantidadeItem" placeholder="Quantidade">
+      <button onclick="adicionarItem()">Adicionar</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantidade</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+
+      <tbody id="listaItens">
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
